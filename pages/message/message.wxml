@@ -1,0 +1,121 @@
+<!--pages/message/message.wxml-->
+<view class="row">
+  <view class="title">地区</view>
+  <view style="flex:1"></view>
+  <view class="text">湖北省黄冈市红安县</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">企业名称</view>
+  <view style="flex:1"></view>
+  <view class="text">xxxxxx经营部</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">企业编号</view>
+  <view style="flex:1"></view>
+  <view class="text">83019988</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">所属行业</view>
+  <view style="flex:1"></view>
+  <view class="text">商超 - 零售</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view style="height:20rpx;"></view>
+<view class="row">
+  <view class="title">商户简称</view>
+  <view style="flex:1"></view>
+  <view class="text">xxxxxx</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">商家照片</view>
+  <view style="flex:1"></view>
+  <view class="text">5</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">商家类型</view>
+  <view style="flex:1"></view>
+  <view class="text">个体工商户</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view style="height:20rpx;"></view>
+<view class="row">
+  <view class="title">法定代表人</view>
+  <view style="flex:1"></view>
+  <view class="text">xxxxxx</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">经营范围</view>
+  <view style="flex:1"></view>
+  <view class="text">xxxxxxxxx</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">注册资本</view>
+  <view style="flex:1"></view>
+  <view class="text">100万</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view style="height:20rpx;"></view>
+<view class="row">
+  <view class="title">成立日期</view>
+  <view style="flex:1"></view>
+  <view class="text">2018-03-21</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">经营期限</view>
+  <view style="flex:1"></view>
+  <view class="text">长期</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view style="height:20rpx;"></view>
+<view class="row">
+  <view class="title">注册地址</view>
+  <view style="flex:1"></view>
+  <view class="text">红安县城关镇园艺大道125号</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">经营地址</view>
+  <view style="flex:1"></view>
+  <view class="text">红安县城关镇园艺大道125号</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">登记机关</view>
+  <view style="flex:1"></view>
+  <view class="text">红安县工商局</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view style="height:20rpx;"></view>
+<view class="row">
+  <view class="title">联系人姓名</view>
+  <view style="flex:1"></view>
+  <view class="text">xxxxx</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="row">
+  <view class="title">联系人电话</view>
+  <view style="flex:1"></view>
+  <view class="text">13900000000</view>
+  <image src="./../../images/arrow.png"></image>
+</view>
+<view class="card">
+  <image src="./../../images/add_s.png"></image>
+  <view>上传营业执照副本</view>
+</view>
+<view class="card">
+  <image src="./../../images/sfz_z.png"></image>
+  <view>上传身份证正面</view>
+</view>
+<view class="card">
+  <image src="./../../images/sfz_f.png"></image>
+  <view>上传身份证反面</view>
+</view>
+<view class="btn">提交审核资料</view>
