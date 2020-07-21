@@ -1,28 +1,29 @@
-// pages/center/center.js
+// pages/advertising/advertising.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    adData:{
+      orderNo:'5287485',
+      videoName:'晚安家居15s',
+      adDuration:'15s',
+      dropScreen:'100',
+      billingMode:'199元/月',
+      charge:'￥199'
+    },
   },
-
-  handleNav(e){
-    let nav = e.currentTarget.dataset.tag;
-    if(nav=='1'){
-      wx.navigateTo({
-        url: '/pages/message/message',
-      })
-    }else if (nav == '2') {
-      wx.navigateTo({
-        url: '/pages/ad/ad',
-      })
-    } else if (nav == '3') {
-      wx.navigateTo({
-        url: '/pages/advertising/advertising',
-      })
-    }
+  
+  handleUpdate(){
+    wx.navigateTo({
+      url: '/pages/advertisingUpdate/advertisingUpdate?adData=' + JSON.stringify(this.data.adData),
+    })
+  },
+  handleAdd(){
+    wx.navigateTo({
+      url: '/pages/advertisingUpdate/advertisingUpdate',
+    })
   },
 
   /**

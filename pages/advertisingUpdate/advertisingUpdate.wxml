@@ -1,0 +1,46 @@
+<!--pages/advertisingUpdate/advertisingUpdate.wxml-->
+<view class="row">
+  <view class="title">选择视频</view>
+  <view style="flex:1"></view>
+  <!-- <view class="text">晚安家居15s</view> -->
+   <picker bindchange="bindPickerVideoChange" value="{{videoIndex}}" range="{{videoList}}">
+    <view class="text">
+      {{videoList[videoIndex]}}
+    </view>
+  </picker>
+  <image src="./../../images/arrow.png"></image> 
+</view>
+
+<view class="row">
+  <view class="title">广告时长</view>
+  <view style="flex:1"></view>
+  <input class="text" placeholder-class="text" placeholder="请输入广告时长" style="text-align:right;margin-right:30rpx;" value="{{adData.adDuration}}" bindinput="handleAdDuration"></input>
+  <!-- <view class="text">15s</view> -->
+  <!-- <image src="./../../images/arrow.png"></image>  -->
+</view>
+
+<view class="row">
+  <view class="title">投放屏幕</view>
+  <view style="flex:1"></view>
+  <input class="text" placeholder-class="text" placeholder="请输入投放屏幕" style="text-align:right;margin-right:30rpx;" value="{{dropScreen}}" bindinput="handleDropScreen"></input>
+  <!-- <view class="text">100</view> -->
+  <!-- <image src="./../../images/arrow.png"></image>  -->
+</view>
+
+<view class="row">
+  <view class="title">计费模式</view>
+  <view style="flex:1"></view>
+  <input class="text" placeholder-class="text" placeholder="请输入计费模式" style="text-align:right;margin-right:30rpx;" value="{{billingMode}}" bindinput="handleBillingMode"></input>
+  <!-- <view class="text">199元/月</view> -->
+  <!-- <image src="./../../images/arrow.png"></image>  -->
+</view>
+
+<view class="row">
+  <view class="title">收费</view>
+  <view style="flex:1"></view>
+  <input class="text" placeholder-class="text" placeholder="请输入收费" style="text-align:right;margin-right:30rpx;" value="{{charge}}" bindinput="handleCharge"></input>
+  <!-- <view class="text">￥199.00</view> -->
+  <!-- <image src="./../../images/arrow.png"></image>  -->
+</view>
+
+<view catchtap="handleSure" class="btn">确定</view>

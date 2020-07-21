@@ -1,0 +1,13 @@
+<!--pages/videoUpload/videoUpload.wxml-->
+<view catchtap="handleVideo" class="card">
+    <image class="videoImg" src="./../../images/sp.jpg"></image>
+    <view class="cover">
+      <view>晚安家居（6585748）</view>
+      <view class="row" style="margin-top:20rpx;">
+        <image src="./../../images/loading.png"></image>
+        <view class="time">视频时长：15s</view>
+    </view>
+    </view>
+    <image class="statusImg" src="./../../images/play.png"></image>
+  </view>
+<view catchtap="submit" class="btn">提交视频广告审核</view>

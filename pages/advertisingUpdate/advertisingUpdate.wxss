@@ -1,0 +1,41 @@
+/* pages/advertisingUpdate/advertisingUpdate.wxss */
+page{
+  background: #efefef;
+  padding: 20rpx 0 20rpx 0;
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+  align-items: center;
+  padding: 24rpx 10rpx 24rpx 30rpx;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  justify-content: space-between;
+  margin-bottom: 14rpx;
+}
+.title{
+  font-size: 30rpx;
+  color: #333333;
+  font-weight: 600;
+}
+.text{
+  font-size: 30rpx;
+  color: #aaaaaa;
+}
+.row image{
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.btn{
+  width: 90%;
+  margin-left: 5%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #ffffff;
+  background: #cbaa75;
+  border-radius: 50px;
+  margin-top: 60rpx;
+  margin-bottom: 20rpx;
+}

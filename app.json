@@ -1,10 +1,16 @@
 {
   "pages": [
-    "pages/center/center",
     "pages/index/index",
+    "pages/videoUpload/videoUpload",
+    "pages/center/center",
+    "pages/advertisingUpdate/advertisingUpdate",
+    "pages/advertising/advertising",
+    
     "pages/logs/logs",
     "pages/focus/focus",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/ad/ad"
+    
   ],
   "tabBar": {
     "selectedColor": "#333333",

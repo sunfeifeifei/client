@@ -1,0 +1,55 @@
+<!--pages/advertising/advertising.wxml-->
+<view class="card">
+  <view class="card-left">
+    <image class="videoImg" src="./../../images/sp.jpg"></image>
+    <view class="cover"></view>
+    <image class="statusImg" src="./../../images/play.png"></image>
+  </view>
+  <view class="card-right">
+    <view class="row">
+      <view class="title">广告订单</view>
+      <view class="text">25685748</view>
+    </view>
+    <view class="row">
+      <view class="title">广告名称</view>
+      <view class="text">晚安家具15s</view>
+    </view>
+    <view class="row">
+      <view class="title">广告时长</view>
+      <view class="text">15s</view>
+    </view>
+    <view class="row">
+      <view class="title">投放屏幕</view>
+      <view class="text">100</view>
+    </view>
+    <view class="row">
+      <view class="title">计费模式</view>
+      <view class="text">199元/月</view>
+    </view>
+    <view class="row">
+      <view class="title">投放日期</view>
+      <view class="text">2020-05-21</view>
+    </view>
+    <view class="row">
+      <view class="title">截止日期</view>
+      <view class="text">2020-10-30</view>
+    </view>
+    <view class="row">
+      <view class="title">收费</view>
+      <view class="text">￥199.00</view>
+    </view>
+    <view class="row">
+      <view class="title">已投放</view>
+      <view class="text">1234</view>
+    </view>
+    <view class="row">
+      <view class="title">状态</view>
+      <view class="text">审核中</view>
+    </view>
+  </view>
+</view>
+
+<view catchtap="handleUpdate" class="update">修改投放计划</view>
+<view catchtap="handleAdd" class="add">
+  <image src="./../../images/add.png"></image>
+</view>

@@ -1,4 +1,4 @@
-// pages/center/center.js
+// pages/ad/ad.js
 Page({
 
   /**
@@ -8,21 +8,10 @@ Page({
 
   },
 
-  handleNav(e){
-    let nav = e.currentTarget.dataset.tag;
-    if(nav=='1'){
-      wx.navigateTo({
-        url: '/pages/message/message',
-      })
-    }else if (nav == '2') {
-      wx.navigateTo({
-        url: '/pages/ad/ad',
-      })
-    } else if (nav == '3') {
-      wx.navigateTo({
-        url: '/pages/advertising/advertising',
-      })
-    }
+  handleAdd(){
+    wx.navigateTo({
+      url: '/pages/videoUpload/videoUpload',
+    })
   },
 
   /**

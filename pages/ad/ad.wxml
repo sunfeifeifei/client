@@ -1,0 +1,80 @@
+<!--pages/ad/ad.wxml-->
+<view class="card">
+  <view class="card-left">
+    <image class="videoImg" src="./../../images/sp.jpg"></image>
+    <view class="cover"></view>
+    <image class="statusImg" src="./../../images/play.png"></image>
+  </view>
+  <view class="card-right">
+    <view class="title">晚安家具15s(65667900)</view>
+    <view class="time" style="margin-top:20rpx;">上传时间：2020-6-10</view>
+    <view class="time">审核时间：2020-6-11</view>
+    <view class="row" style="margin-top:20rpx;">
+      <image src="./../../images/loading.png"></image>
+      <view class="time">视频时长：15s</view>
+    </view>
+    <view class="img-box">
+      <image src='./../../images/sh_z.png'></image>
+    </view>
+  </view> 
+</view>
+<view class="card">
+  <view class="card-left">
+    <image class="videoImg" src="./../../images/sp.jpg"></image>
+    <view class="cover"></view>
+    <image class="statusImg" src="./../../images/play.png"></image>
+  </view>
+  <view class="card-right">
+    <view class="title">晚安家具15s(65667900)</view>
+    <view class="time" style="margin-top:20rpx;">上传时间：2020-6-10</view>
+    <view class="time">审核时间：2020-6-11</view>
+    <view class="row" style="margin-top:20rpx;">
+      <image src="./../../images/loading.png"></image>
+      <view class="time">视频时长：15s</view>
+    </view>
+    <view class="img-box">
+      <image src='./../../images/sh_t.png'></image>
+    </view>
+  </view> 
+</view>
+<view class="card">
+  <view class="card-left">
+    <image class="videoImg" src="./../../images/sp.jpg"></image>
+    <view class="cover"></view>
+    <image class="statusImg" src="./../../images/play.png"></image>
+  </view>
+  <view class="card-right">
+    <view class="title">晚安家具15s(65667900)</view>
+    <view class="time" style="margin-top:20rpx;">上传时间：2020-6-10</view>
+    <view class="time">审核时间：2020-6-11</view>
+    <view class="row" style="margin-top:20rpx;">
+      <image src="./../../images/loading.png"></image>
+      <view class="time">视频时长：15s</view>
+    </view>
+    <view class="img-box">
+      <image src='./../../images/sh_w.png'></image>
+    </view>
+  </view> 
+</view>
+<view class="card">
+  <view class="card-left">
+    <image class="videoImg" src="./../../images/sp.jpg"></image>
+    <view class="cover"></view>
+    <image class="statusImg" src="./../../images/play.png"></image>
+  </view>
+  <view class="card-right">
+    <view class="title">晚安家具15s(65667900)</view>
+    <view class="time" style="margin-top:20rpx;">上传时间：2020-6-10</view>
+    <view class="time">审核时间：2020-6-11</view>
+    <view class="row" style="margin-top:20rpx;">
+      <image src="./../../images/loading.png"></image>
+      <view class="time">视频时长：15s</view>
+    </view>
+    <view class="img-box">
+      <image src='./../../images/sh_y.png'></image>
+    </view>
+  </view> 
+</view>
+<view bindtap="handleAdd" class="add-card">
+  <image src='./../../images/ad_add.png'></image>
+</view>
