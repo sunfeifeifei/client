@@ -72,8 +72,8 @@ page{
   color: #ffffff;
   background: #cbaa75;
   border-radius: 50px;
-  margin-top: 60rpx;
-  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
 }
 .add{
   width: 90%;

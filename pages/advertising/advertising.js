@@ -5,19 +5,74 @@ Page({
    * 页面的初始数据
    */
   data: {
-    adData:{
-      orderNo:'5287485',
-      videoName:'晚安家居15s',
-      adDuration:'15s',
-      dropScreen:'100',
-      billingMode:'199元/月',
-      charge:'￥199'
-    },
+    adData:[
+      {
+        orderNo: '5287485',
+        videoName: '晚安家居15s',
+        adDuration: '15s',
+        dropScreen: '100',
+        billingMode: '199元/月',
+        launchTime:'2020-05-21',
+        deadline:'2020-09-20',
+        charge: '￥199',
+        launched:'1212',
+        status:'审核中'
+      },
+      {
+        orderNo: '5287485',
+        videoName: '晚安家居15s',
+        adDuration: '25s',
+        dropScreen: '100',
+        billingMode: '399元/月',
+        launchTime: '2020-05-21',
+        deadline: '2020-09-20',
+        charge: '￥199',
+        launched: '1212',
+        status: '审核中'
+      },
+      {
+        orderNo: '5287485',
+        videoName: '晚安家居15s',
+        adDuration: '30s',
+        dropScreen: '100',
+        billingMode: '2199元/月',
+        launchTime: '2020-05-21',
+        deadline: '2020-09-20',
+        charge: '￥199',
+        launched: '1212',
+        status: '审核中'
+      },
+      {
+        orderNo: '5287485',
+        videoName: '晚安家居15s',
+        adDuration: '5s',
+        dropScreen: '100',
+        billingMode: '99元/月',
+        launchTime: '2020-05-21',
+        deadline: '2020-09-20',
+        charge: '￥199',
+        launched: '1212',
+        status: '审核中'
+      }, 
+      {
+        orderNo: '5287485',
+        videoName: '晚安家居15s',
+        adDuration: '15s',
+        dropScreen: '100',
+        billingMode: '199元/月',
+        launchTime: '2020-05-21',
+        deadline: '2020-09-20',
+        charge: '￥199',
+        launched: '1212',
+        status: '审核中'
+      }
+    ],
   },
   
-  handleUpdate(){
+  handleUpdate(e){
+    console.log(e.currentTarget.dataset.item);
     wx.navigateTo({
-      url: '/pages/advertisingUpdate/advertisingUpdate?adData=' + JSON.stringify(this.data.adData),
+      url: '/pages/advertisingUpdate/advertisingUpdate?adData=' + JSON.stringify(e.currentTarget.dataset.item),
     })
   },
   handleAdd(){

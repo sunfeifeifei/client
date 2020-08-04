@@ -44,3 +44,40 @@
 </view>
 
 <view catchtap="handleSure" class="btn">确定</view>
+
+
+<!-- 模态框  -->
+<!--mask-->
+<view class="drawer_screen1" bindtap="powerDrawer" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box1" wx:if="{{showModalStatus}}">
+  <!--drawer content-->
+  <view class="drawer_content1">
+    <view class="detail-row-title">订单确认</view>
+    <view class="detail-row">
+      <view class="detail-title">视频名称</view>
+      <view class="detail-value">晚安家居15s(25587485)</view>
+    </view>
+    <view class="detail-row">
+      <view class="detail-title">广告时长</view>
+      <view class="detail-value">15s</view>
+    </view>
+    <view class="detail-row">
+      <view class="detail-title">投放屏幕</view>
+      <view class="detail-value">100</view>
+    </view>
+    <view class="detail-row">
+      <view class="detail-title">计费模式</view>
+      <view class="detail-value">199元/月</view>
+    </view>
+    <view class="detail-row" style="text-align: right">
+      <view class="detail-title" style="width:100%;padding-right:44rpx;box-sizing: border-box">收费：</view>
+      <view class="detail-value" style="width:100%;color:#ff4444;font-size:40rpx;font-weight:600">199.00</view>
+    </view>
+  </view>
+  <view class='btn_x1'>
+    <view>修改投放计划</view>
+    <view style="background:#cbaa75">确认支付</view>
+  </view>
+</view>

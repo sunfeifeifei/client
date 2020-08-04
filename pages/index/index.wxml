@@ -1,12 +1,14 @@
 <!--index.wxml-->
-<view class="home-box1">
+
+<!-- 有投放历史  -->
+<view wx:if="{{status==2}}">
+<view catchtap="handleToProfitDetail" class="home-box1">
   <view>今日投放</view>
   <view class="mun">1321</view>
   <image src="./../../images/home_bg1.png"></image>
 </view>
-
 <scroll-view scroll-x class='top_1'>
-  <view wx:for="{{list}}" class='content_1' style="padding-right:{{index==list.length-1?'30rpx':'0'}}">
+  <view catchtap="handleToProfitDetail" wx:for="{{list}}" class='content_1' style="padding-right:{{index==list.length-1?'30rpx':'0'}}">
     <view class='content_1_item'>
       <view>
         <view>{{item.time}}</view>
@@ -26,9 +28,37 @@
     <view>时段</view>
     <view>播放次数</view>
   </view>
-  <view wx:for="{{8}}" class="row" style="border-bottom:{{index==7?'none':'1px solid #eeeeee'}}">
+  <view catchtap="handleToProfitDetail" wx:for="{{8}}" class="row" style="border-bottom:{{index==7?'none':'1px solid #eeeeee'}}">
     <view>12:00-13:00</view>
     <view>123</view>
   </view>
+</view>
+</view>
+
+<!-- 投放还在排序中  -->
+<view wx:if="{{status==1}}">
+<view class="home-box1" style="padding-top:0">
+  <view class="mun" style="font-size:40rpx;">2020-06-15</view>
+  <view style="height:10rpx"></view>
+  <view class="mun" style="font-size:40rpx;">排序中，请稍等</view>
   
+</view>
+
+<view class="card">
+  <view class="row">
+    <view>名称</view>
+    <view>日期</view>
+  </view>
+  <view wx:for="{{8}}" class="row" style="border-bottom:{{index==7?'none':'1px solid #eeeeee'}}">
+    <view>{{index+1}}xxx专卖店</view>
+    <view>2020-05-20</view>
+  </view>
+</view>
+</view>
+
+<!-- 没有广告投放  -->
+<view wx:if="{{status==0}}">
+<view class="home-box1" style="padding-top:0">
+  <view class="mun" style="font-size:40rpx;">您暂无广告投放</view>
+</view>
 </view>

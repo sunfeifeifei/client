@@ -1,4 +1,5 @@
 <!--pages/advertising/advertising.wxml-->
+<view wx:for="{{adData}}" wx:key='key'>
 <view class="card">
   <view class="card-left">
     <image class="videoImg" src="./../../images/sp.jpg"></image>
@@ -8,48 +9,50 @@
   <view class="card-right">
     <view class="row">
       <view class="title">广告订单</view>
-      <view class="text">25685748</view>
+      <view class="text">{{item.orderNo}}</view>
     </view>
     <view class="row">
       <view class="title">广告名称</view>
-      <view class="text">晚安家具15s</view>
+      <view class="text">{{item.videoName}}</view>
     </view>
     <view class="row">
       <view class="title">广告时长</view>
-      <view class="text">15s</view>
+      <view class="text">{{item.adDuration}}</view>
     </view>
     <view class="row">
       <view class="title">投放屏幕</view>
-      <view class="text">100</view>
+      <view class="text">{{item.dropScreen}}</view>
     </view>
     <view class="row">
       <view class="title">计费模式</view>
-      <view class="text">199元/月</view>
+      <view class="text">{{item.billingMode}}</view>
     </view>
     <view class="row">
       <view class="title">投放日期</view>
-      <view class="text">2020-05-21</view>
+      <view class="text">{{item.launchTime}}</view>
     </view>
     <view class="row">
       <view class="title">截止日期</view>
-      <view class="text">2020-10-30</view>
+      <view class="text">{{item.deadline}}</view>
     </view>
     <view class="row">
       <view class="title">收费</view>
-      <view class="text">￥199.00</view>
+      <view class="text">{{item.charge}}</view>
     </view>
     <view class="row">
       <view class="title">已投放</view>
-      <view class="text">1234</view>
+      <view class="text">{{item.launched}}</view>
     </view>
     <view class="row">
       <view class="title">状态</view>
-      <view class="text">审核中</view>
+      <view class="text">{{item.status}}</view>
     </view>
   </view>
 </view>
+<view data-item="{{item}}" catchtap="handleUpdate" class="update">修改投放计划</view>
+</view>
 
-<view catchtap="handleUpdate" class="update">修改投放计划</view>
+
 <view catchtap="handleAdd" class="add">
   <image src="./../../images/add.png"></image>
 </view>

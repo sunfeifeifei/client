@@ -29,18 +29,18 @@ Page({
   },
 
   submit(){
-    wx.uploadFile({
-      url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
-      filePath: this.data.tempFilePaths[0],
-      name: 'file',
-      formData: {
-        'user': 'test'
-      },
-      success(res) {
-        const data = res.data
-        //do something
-      }
-    })
+    // wx.uploadFile({
+    //   url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+    //   filePath: this.data.tempFilePaths[0],
+    //   name: 'file',
+    //   formData: {
+    //     'user': 'test'
+    //   },
+    //   success(res) {
+    //     const data = res.data
+    //     //do something
+    //   }
+    // })
   },
 
   /**

@@ -1,25 +1,25 @@
-// pages/advertisingUpdate/advertisingUpdate.js
+// pages/profitDetail/profitDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    adData:{},
-    edit:false,
+    date:'2020-06-16',
+
+    array:['晚安家居(5698585)'],
+    index:0,
+
+    srceenHeight:0,
+    leftNav:0,
     
-    videoList:['晚安家居15s'],
-    videoIndex:0,
-    videoName:'',
-
-    adDuration:'',
-    dropScreen:'',
-    billingMode:'',
-    charge:'',
-
-
     showModalStatus: false,
-  }, 
+  },
+
+  handleItem(e) {
+    console.log('--当前点击--', e.currentTarget.dataset.item);
+    this.util(this, 'open');
+  },
 
   powerDrawer() {
     this.util(this, 'close');
@@ -55,58 +55,37 @@ Page({
   },
 
 
-  bindPickerVideoChange(e) {
-    console.log(e);
+  handleTime(e){
+    console.log(e.currentTarget.dataset.item);
+    console.log(e.currentTarget.dataset.index);
     this.setData({
-      videoIndex: Number(e.detail.value),
-      videoName: this.data.videoList[Number(e.detail.value)]
+      leftNav: e.currentTarget.dataset.index
+    });
+
+  },
+  
+  bindDateChange (e) {
+    this.setData({
+      date: e.detail.value
     })
   },
-
-  handleAdDuration(e) {
-    this.setData({
-      adDuration: e.detail.value
-    });
-  },
   
-  handleDropScreen(e) {
+  bindPickerChange: function (e) {
     this.setData({
-      dropScreen: e.detail.value
-    });
-  },
-
-  handleBillingMode(e) {
-    this.setData({
-      billingMode: e.detail.value
-    });
-  },
-
-  handleCharge(e) {
-    this.setData({
-      charge: e.detail.value
-    });
-  },
-  
-  handleSure(){
-    this.util(this, 'open');
+      index: e.detail.value
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    if(options.adData){
-      let temp = JSON.parse(options.adData);
-      this.setData({
-        adData:temp,
-        edit:true,
-        videoName: temp.videoName,
-        adDuration: temp.adDuration,
-        dropScreen: temp.dropScreen,
-        billingMode: temp.billingMode,
-        charge: temp.charge,
-      });
-    }
+    this.setData({
+      srceenHeight: wx.getSystemInfoSync().windowHeight
+    },()=>{
+      console.log(this.data.srceenHeight);
+    }); 
+    
   },
 
   /**
