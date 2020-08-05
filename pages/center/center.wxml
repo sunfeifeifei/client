@@ -26,12 +26,12 @@
   <view style="flex:1"></view>
   <image class="row-img-right" src="./../../images/arrow.png"></image>
 </view>
-<view data-tag="4" catchtap="handleNav"  class="row">
+<!-- <view data-tag="4" catchtap="handleNav"  class="row">
   <image class="row-img-left" src="./../../images/list4.png"></image>
   <view>计费明细</view>
   <view style="flex:1"></view>
   <image class="row-img-right" src="./../../images/arrow.png"></image>
-</view>
+</view> -->
 <view data-tag="5" catchtap="handleNav"  class="row">
   <image class="row-img-left" src="./../../images/list5.png"></image>
   <view>微信充值</view>

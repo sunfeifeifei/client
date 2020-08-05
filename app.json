@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/recharge/recharge",
     "pages/advertisingUpdate/advertisingUpdate",
     "pages/advertising/advertising",
     "pages/profitDetail/profitDetail",

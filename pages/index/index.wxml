@@ -8,7 +8,7 @@
   <image src="./../../images/home_bg1.png"></image>
 </view>
 <scroll-view scroll-x class='top_1'>
-  <view catchtap="handleToProfitDetail" wx:for="{{list}}" class='content_1' style="padding-right:{{index==list.length-1?'30rpx':'0'}}">
+  <view catchtap="handleToProfitDetail" wx:for="{{list}}" wx:key='key' class='content_1' style="padding-right:{{index==list.length-1?'30rpx':'0'}}">
     <view class='content_1_item'>
       <view>
         <view>{{item.time}}</view>
@@ -28,7 +28,7 @@
     <view>时段</view>
     <view>播放次数</view>
   </view>
-  <view catchtap="handleToProfitDetail" wx:for="{{8}}" class="row" style="border-bottom:{{index==7?'none':'1px solid #eeeeee'}}">
+  <view catchtap="handleToProfitDetail" wx:for="{{8}}" wx:key='key' class="row" style="border-bottom:{{index==7?'none':'1px solid #eeeeee'}}">
     <view>12:00-13:00</view>
     <view>123</view>
   </view>
@@ -49,7 +49,7 @@
     <view>名称</view>
     <view>日期</view>
   </view>
-  <view wx:for="{{8}}" class="row" style="border-bottom:{{index==7?'none':'1px solid #eeeeee'}}">
+  <view wx:for="{{8}}" wx:key='key' class="row" style="border-bottom:{{index==7?'none':'1px solid #eeeeee'}}">
     <view>{{index+1}}xxx专卖店</view>
     <view>2020-05-20</view>
   </view>

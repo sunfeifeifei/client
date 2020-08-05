@@ -1,0 +1,55 @@
+/* pages/recharge/recharge.wxss */
+page{
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  background: #fbfbfb;
+}
+.card{
+  background: #cbaa75;
+  border-radius: 16rpx;
+  height: 300rpx;
+  font-size: 30rpx;
+  color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.value{
+  font-size: 80rpx;
+  font-weight: 600;
+}
+.title{
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 600;
+  padding: 40rpx 0 0 0;
+}
+.row-box{
+  background: #ffffff;
+  padding: 10rpx 20rpx;
+  margin-top: 20rpx;
+}
+.row{
+  display: flex;
+  align-items: center;
+  color: #cccccc;
+  font-size: 30rpx;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.money{
+  color: #333333;
+}
+.btn{
+  width: 60%;
+  left: 20%;
+  height: 76rpx;
+  line-height: 76rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 20rpx;
+  background: #cbaa75;
+  color: #fff;
+  border-radius: 50px;
+}

@@ -1,0 +1,13 @@
+<!--pages/recharge/recharge.wxml-->
+<view class="card">
+  <view>余额（元）</view>
+  <view class="value">99.00</view>
+</view>
+<view class="title">充值记录</view>
+<view class="row-box">
+  <view class="row" wx:for="{{list}}" wx:key='key'>
+    <view>{{item.date}}</view>
+    <view class="money">{{item.money}}</view>
+  </view>
+</view>
+<view class="btn">充值</view>

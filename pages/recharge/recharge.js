@@ -1,36 +1,40 @@
-// pages/center/center.js
+// pages/recharge/recharge.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-
-  handleNav(e){
-    let nav = e.currentTarget.dataset.tag;
-    if(nav=='1'){
-      wx.navigateTo({
-        url: '/pages/message/message',
-      })
-    }else if (nav == '2') {
-      wx.navigateTo({
-        url: '/pages/ad/ad',
-      })
-    } else if (nav == '3') {
-      wx.navigateTo({
-        url: '/pages/advertising/advertising',
-      })
-    }else if(nav=='5'){
-      wx.navigateTo({
-        url: '/pages/recharge/recharge',
-      })
-    }else if(nav=='6'){
-      wx.makePhoneCall({
-        phoneNumber: '13500000000',
-      })
-    }
+    list:[
+      {
+        date:'2020-08-04',
+        money:'99.00'
+      },
+      {
+        date: '2020-08-03',
+        money: '99.00'
+      },
+      {
+        date: '2020-08-02',
+        money: '99.00'
+      },
+      {
+        date: '2020-08-01',
+        money: '99.00'
+      },
+      {
+        date: '2020-07-31',
+        money: '99.00'
+      },
+      {
+        date: '2020-07-30',
+        money: '99.00'
+      },
+      {
+        date: '2020-07-29',
+        money: '99.00'
+      }
+    ],
   },
 
   /**
