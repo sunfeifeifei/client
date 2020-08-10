@@ -36,6 +36,25 @@ page{
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  align-items: center;
+}
+.cover1{
+  width: 100%;
+  height: 680rpx;
+  border-radius: 16rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #999999;
+  color: #ffffff;
+  padding: 26rpx 30rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 .statusImg{
   width: 120rpx;

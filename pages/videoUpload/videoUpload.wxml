@@ -1,13 +1,28 @@
 <!--pages/videoUpload/videoUpload.wxml-->
 <view catchtap="handleVideo" class="card">
-    <image class="videoImg" src="./../../images/sp.jpg"></image>
+  <view wx:if="{{uploadData}}">
+    <image class="videoImg" src="{{uploadData.imgurl}}"></image>
     <view class="cover">
-      <view>晚安家居（6585748）</view>
-      <view class="row" style="margin-top:20rpx;">
+      <view style="width:100%">{{uploadData.name}}</view>
+      <image class="statusImg" src="./../../images/play.png"></image>
+      <view class="row" style="margin-top:20rpx;width:100%">
         <image src="./../../images/loading.png"></image>
-        <view class="time">视频时长：15s</view>
+        <view class="time">视频时长：{{uploadData.duration}}</view>
+      </view>
     </view>
-    </view>
-    <image class="statusImg" src="./../../images/play.png"></image>
   </view>
+
+  <view wx:if="{{!uploadData}}">
+    <view class="cover1">
+      <image class="statusImg" src="./../../images/add.png"></image>
+      <view class="row" style="margin-top:20rpx;">
+        <view class="time">点击上传广告视频</view>
+      </view>
+    </view>
+
+  </view>
+
+</view>
+
+
 <view catchtap="submit" class="btn">提交视频广告审核</view>

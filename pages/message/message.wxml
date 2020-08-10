@@ -13,7 +13,7 @@
   <view class="title">企业名称</view>
   <view style="flex:1"></view>
   <view class="text">
-   <input placeholder-class="text" placeholder="请输入企业名称" style="text-align:right;margin-right:30rpx;" value="{{nameOfEnterprise}}" bindinput="handleInputNameOfEnterprise"></input>
+    <input placeholder-class="text" placeholder="请输入企业名称" style="text-align:right;margin-right:30rpx;" value="{{nameOfEnterprise}}" bindinput="handleInputNameOfEnterprise"></input>
   </view>
   <!-- <image src="./../../images/arrow.png"></image> -->
 </view>
@@ -92,7 +92,7 @@
   <view class="title">成立日期</view>
   <view style="flex:1"></view>
   <!-- <view class="text">2018-03-21</view> -->
-   <picker mode="date" value="{{date}}" start="1900-01-01" end="2030-12-31" bindchange="bindDateChange">
+  <picker mode="date" value="{{date}}" start="1900-01-01" end="2030-12-31" bindchange="bindDateChange">
     <view class="text">
       {{date}}
     </view>
@@ -145,7 +145,7 @@
   <view class="title">联系人电话</view>
   <view style="flex:1"></view>
   <view class="text">
-     <input placeholder-class="text" placeholder="请输入联系人电话" style="text-align:right;margin-right:30rpx;" value="{{contactsPhone}}" bindinput="handleContactsPhone"></input>
+    <input placeholder-class="text" placeholder="请输入联系人电话" style="text-align:right;margin-right:30rpx;" value="{{contactsPhone}}" bindinput="handleContactsPhone"></input>
   </view>
   <!-- <image src="./../../images/arrow.png"></image> -->
 </view>
@@ -168,15 +168,13 @@
   </view>
 </view>
 <view catchtap="handleUploadReverse" class="card">
-  
   <view wx:if="{{reverse==''}}" class="card">
     <image src="./../../images/sfz_f.png"></image>
-  <view>上传身份证反面</view>
+    <view>上传身份证反面</view>
   </view>
   <view wx:if="{{reverse!=''}}" style="width:100%;height:100%">
     <image style="width:100%;height:100%" src="{{reverse}}"></image>
   </view>
-
-  
 </view>
+
 <view class="btn">提交审核资料</view>
